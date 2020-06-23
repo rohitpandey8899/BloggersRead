@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_below="@+id/RR_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/books_RR"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/new_book"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textSize="25dp"
+                    android:textColor="#000"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/books_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/new_book"
+                    android:layout_marginTop="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/blogs_RR"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/books_RR">
+
+                <TextView
+                    android:id="@+id/blogs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blogs"
+                    android:textSize="25dp"
+                    android:textColor="#000" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/blogs_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/blogs"
+                    android:layout_marginTop="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blogs_RR">
+
+                <TextView
+                    android:id="@+id/Stories"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stories"
+                    android:textSize="25dp"
+                    android:textColor="#000" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stories_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/Stories"
+                    android:layout_marginTop="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

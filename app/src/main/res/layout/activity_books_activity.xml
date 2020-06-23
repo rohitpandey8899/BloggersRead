@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Books_activity">
+
+    <RelativeLayout
+        android:id="@+id/book_RR"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/books_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Book Name"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="283dp" />
+
+    <ImageView
+        android:id="@+id/book_image_view"
+        android:layout_width="160dp"
+        android:layout_height="220dp"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:background="#B8B6B6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/books_name"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author:"
+            android:layout_marginTop="10dp"
+            android:textColor="#817A7A"
+            android:textSize="17dp"
+            android:layout_below="@id/book_image_view"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="283dp" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#817A7A"
+        android:layout_toEndOf="@+id/author"
+        android:textSize="17dp"
+        android:layout_below="@id/book_image_view"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="3dp"
+            android:layout_height="35dp"
+            android:background="#1B1B2E"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/book_image_view" />
+
+
+        <TextView
+            android:id="@+id/category_nn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category:"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#817A7A"
+            android:layout_toEndOf="@+id/view"
+            android:textSize="17dp"
+            android:layout_below="@id/book_image_view"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="283dp" />
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#817A7A"
+        android:layout_toEndOf="@+id/category_nn"
+        android:textSize="17dp"
+        android:layout_below="@id/book_image_view"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/description_RR"
+        android:padding="10dp"
+        android:layout_below="@id/book_RR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDDDD"
+    tools:context=".home_page">
+
+    <RelativeLayout
+        android:id="@+id/RR_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+        <include layout="@layout/image_slider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RR_view"
+        android:padding="5dp">
+
+        <include layout="@layout/home_content" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+</RelativeLayout>
